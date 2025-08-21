@@ -1,26 +1,33 @@
 # Swivel – Booking.com Assessment (Playwright + TypeScript)
 
+This project automates all **21 steps** of the Booking.com assessment using Playwright.  
+It follows best practices with **Page Object Model (POM)**, **parametrized test data**, **multi-browser support**, and **CI/CD integration**.
+
+---
+
+## 📂 Project Structure
+
 project-root/
 │
-├─ pages/                  # Page Object Model classes
-│   ├─ HomePage.ts
-│   ├─ ResultsPage.ts
-│   ├─ HotelDetailPage.ts
-│   ├─ BookingPage.ts
-│   └─ CheckoutPage.ts
+├─ pages/ # Page Object Model classes
+│ ├─ HomePage.ts
+│ ├─ ResultsPage.ts
+│ ├─ HotelDetailPage.ts
+│ ├─ BookingPage.ts
+│ └─ CheckoutPage.ts
 │
-├─ testData/               # Test data & results
-│   └─ testData.json       # Input and output values for tests
+├─ testData/ # Test data & results
+│ └─ testData.json # Input and output values for tests
 │
-├─ utils/                  # Utility classes
-│   ├─ config.ts           # Reads .env and exports CONFIG object
-│   ├─ logger.ts           # Logger configuration (pino)
-│   └─ popuphandler.ts     # Handles popups
+├─ utils/ # Utility classes
+│ ├─ config.ts # Reads .env and exports CONFIG object
+│ ├─ logger.ts # Logger configuration (pino)
+│ └─ popuphandler.ts # Handles popups
 │
-├─ tests/                  # Test spec files
-│   └─ bookingFlow.spec.ts
+├─ tests/ # Test spec files
+│ └─ bookingFlow.spec.ts
 │
-├─ .env                    # Environment variables
+├─ .env # Environment variables
 ├─ playwright.config.ts
 ├─ package.json
 └─ README.md
@@ -39,16 +46,27 @@ This project automates all 21 steps of the Booking.com assessment using Playwrig
 - Git
 - (Optional) Allure CLI: https://docs.qameta.io/allure/#_get_started
 
-## Setup
+## ⚡ Setup & Installation
+
 ```bash
+# Clone the repository
 git clone <your-repo-url> booking-automation
 cd booking-automation
+
+# Setup environment variables
 cp .env.sample .env   # adjust values if needed
+
+# Install dependencies
 npm install
+
+# Install Playwright browsers
+npx playwright install
+
+# Prepare Husky & configs
 npm run prepare
 
 
-🛠️ Challenges Faced #
+## Challenges Faced
 
 1.Dynamic locators on Booking.com
 
