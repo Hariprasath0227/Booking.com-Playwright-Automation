@@ -66,43 +66,43 @@ npx playwright install
 npm run prepare
 
 
-## Challenges Faced
+🛠️ Challenges Faced & Solutions
 
-1.Dynamic locators on Booking.com
+Dynamic Locators on Booking.com
 
-2.Many elements (rooms, buttons) have dynamic IDs.
+Issue: Many elements (rooms, buttons) have dynamic IDs.
 
-*Solution: Used getByRole, getByTestId, and filters like nth() to reliably locate elements.
+Solution: Used getByRole, getByTestId, and filters like nth().
 
-1.Date picker complexity
+Date Picker Complexity
 
-2.Selecting check-in/out required JavaScript-based manipulation.
+Issue: Selecting check-in/out required dynamic JavaScript-based handling.
 
-*Solution: Implemented selectDateJS() utility and used offsets from today.
+Solution: Implemented selectDateJS() utility with offsets from today.
 
-1.Popup interruptions
+Popup Interruptions
 
-2.Popups like Genius offers sometimes blocked interactions.
+Issue: Genius offers sometimes blocked interactions.
 
-*Solution: Added a handleGeniusPopup utility to close popups if present.
+Solution: Added handleGeniusPopup utility to auto-close popups.
 
-1.Assertions for dynamic content
+Assertions for Dynamic Content
 
-2.Hotel names, prices, and dates vary.
+Issue: Hotel names, prices, and dates vary.
 
-*Solution: Captured values dynamically, then asserted against expected/test data.
+Solution: Captured values dynamically & asserted against test data.
 
-1.Logger integration
+Logger Integration
 
-2.Needed clear console logs for each step.
+Issue: Needed better visibility of test execution.
 
-*Solution: Integrated pino logger with logger.info() for key actions and verification.
+Solution: Integrated pino logger with logger.info().
 
-1.Page Object Model structure
+POM Structure Planning
 
-2.Separating actions (BookingPage) vs verifications (CheckoutPage) required careful planning.
+Issue: Splitting actions vs verifications required care.
 
-*Solution: Modular POM design with reusable methods and assertions.
+Solution: Modular POM design with reusable methods.
 
 📌 Notes
 
@@ -114,4 +114,7 @@ Test execution: Modular; can run specific page flows independently.
 
 Extensibility: Easily add more test scenarios by extending POM classes.
 
+🤝 Contributing
 
+Pull requests are welcome!
+For major changes, please open an issue first to discuss what you would like to change.
