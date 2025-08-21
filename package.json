@@ -1,0 +1,25 @@
+{
+  "name": "booking-automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Test Automation Assessment (Booking.com) with Playwright + TypeScript",
+  "scripts": {
+    "prepare": "npx playwright install --with-deps",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:all": "playwright test --project=chromium --project=firefox --project=webkit",
+    "report": "allure generate ./allure-results --clean && allure open ./allure-report",
+    "lint": "echo \"(add eslint/prettier if needed)\"",
+    "clean:allure": "rmdir /s /q allure-results && mkdir allure-results"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.0",
+    "@types/node": "^24.3.0",
+    "allure-playwright": "^2.15.1",
+    "dotenv": "^16.6.1",
+    "pino": "^9.9.0",
+    "pino-pretty": "^13.1.1",
+    "typescript": "^5.4.0"
+  }
+}

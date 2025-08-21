@@ -1,0 +1,29 @@
+{
+  "homepage": {
+    "location": "Kandy",
+    "checkIn": "2025-09-01",
+    "checkOut": "2025-09-03",
+    "adults": 2,
+    "children": 1,
+    "rooms": 1
+  },
+  "resultsPage": {
+    "starRating": 5,
+    "capturedHotel": {
+      "name": "Kandy Garden Villa",
+      "priceText": "AUD 33"
+    }
+  },
+  "userDetails": {
+    "firstName": "Test",
+    "lastName": "User",
+    "email": "TestUser@gmail.com",
+    "phone": "123456789"
+  },
+  "checkout": {
+    "checkIn": "2025-09-01",
+    "checkOut": "2025-09-03",
+    "nights": 2,
+    "totalAmount": "AUD 33"
+  }
+}
