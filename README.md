@@ -1,4 +1,4 @@
-# Swivel – Booking.com Assessment (Playwright + TypeScript)
+# Booking.com Assessment (Playwright + TypeScript)
 
 This project automates all **21 steps** of the Booking.com assessment using Playwright.  
 It follows best practices with **Page Object Model (POM)**, **parametrized test data**, **multi-browser support**, and **CI/CD integration**.
